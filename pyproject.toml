@@ -7,7 +7,7 @@ name = "opaq"
 version = "0.1.0"
 description = "Private AI inference on Solana. 200+ models through one OpenAI-compatible endpoint, paid from a sealed balance."
 readme = "README.md"
-requires-python = ">=3.9"
+requires-python = ">=3.10"
 license = "MIT"
 authors = [{ name = "Opaq", email = "team@opaq.computer" }]
 dependencies = ["openai>=1.0"]
