@@ -1,0 +1,27 @@
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[project]
+name = "opaq"
+version = "0.1.0"
+description = "Private AI inference on Solana. 200+ models through one OpenAI-compatible endpoint, paid from a sealed balance."
+readme = "README.md"
+requires-python = ">=3.9"
+license = "MIT"
+authors = [{ name = "Opaq", email = "team@opaq.computer" }]
+dependencies = ["openai>=1.0"]
+keywords = ["opaq", "solana", "privacy", "ai", "llm", "openai", "inference", "privacy-rings"]
+classifiers = [
+  "Programming Language :: Python :: 3",
+  "License :: OSI Approved :: MIT License",
+  "Topic :: Scientific/Engineering :: Artificial Intelligence",
+]
+
+[project.urls]
+Homepage = "https://opaq.computer"
+Documentation = "https://opaq.computer/docs"
+Repository = "https://github.com/opaq-computer/opaq-python"
+
+[tool.hatch.build.targets.wheel]
+packages = ["src/opaq"]
